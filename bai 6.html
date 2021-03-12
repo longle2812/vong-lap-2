@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    var ctx = _pexcanvas.getContext("2d");
+    var d = 20; //The Size of the hearting
+    var k =150; // The Position of the heart
+    ctx.moveTo(k, k + d / 4);
+    ctx.quadraticCurveTo(k, k, k + d / 4, k);
+    ctx.quadraticCurveTo(k + d / 2, k, k + d / 2, k + d / 4);
+    ctx.quadraticCurveTo(k + d / 2, k, k + d * 3/4, k);
+    ctx.quadraticCurveTo(k + d, k, k + d, k + d / 4);
+    ctx.quadraticCurveTo(k + d, k + d / 2, k + d * 3/4, k + d * 3/4);
+    ctx.lineTo(k + d / 2, k + d);
+    ctx.lineTo(k + d / 4, k + d * 3/4);
+    ctx.quadraticCurveTo(k, k + d / 2, k, k + d / 4);
+</script>
+</html>

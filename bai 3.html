@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id = "pic"></p>
+</body>
+<script>
+    for (let i = 1; i <= 5; i++) {
+        let count = 1;
+        while (count <= i) {
+            document.write("*");
+            count++;
+        }
+        document.write("<br>");
+        }
+    document.write("<br>");
+    document.write("<br>");
+    for (let i = 1; i <= 5; i++) {
+        let count = 5;
+        while (count >= i) {
+            document.write("*");
+            count--;
+        }
+        document.write("<br>");
+    }
+    document.write("<br>");
+    document.write("<br>");
+    for (let i = 1; i <= 5; i++) {
+        let j = i;
+        while ((5-j)>0) {
+            document.write("&nbsp&nbsp");
+            j += 1;
+        }
+        for (let k =1; k <= i; k++) {
+            document.write("*");
+        }
+        document.write("<br>");
+    }
+    document.write("<br>");
+    document.write("<br>");
+    for (let i = 5; i > 0; i--) {
+        let count = 5;
+        while ((count-i) >0) {
+            document.write("&nbsp&nbsp");
+            count -= 1;
+        }
+        for (let j = 1; j<= i; j++) {
+            document.write("*");
+        }
+        document.write("<br>");
+    }
+</script>
+</html>
